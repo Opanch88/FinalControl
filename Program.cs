@@ -5,7 +5,7 @@
 
 Console.Clear();
 
-string[] array = { "Hello", "2", "world", ":-)", "1234", "1567", "-2", "computer science", "Russia", "Denmark", "Kazan","4","pip897","arr","Array" };
+string[] array = { "Hello", "2", "world", ":-)", "1234", "1567", "-2", "computer science", "Russia", "Denmark", "Kazan", "4", "pip897", "arr", "Array" };
 
 string[] SortArray(string[] array)
 {
@@ -24,5 +24,9 @@ string[] SortArray(string[] array)
     return newArray;
 }
 
-Console.Write($"Начальный массив :[" + string.Join(", ", array) + "]"+"\n"+"\n");
-Console.Write($"Конечный массив :[" + string.Join(", ", SortArray(array)) + "]");
+Console.Write($"Начальный массив: [" + string.Join(", ", array) + "]" + "\n" + "\n");
+
+string sortedArrayString = string.Join(", ", SortArray(array));
+sortedArrayString = sortedArrayString.TrimEnd(',', ' '); 
+Console.Write($"Конечный массив: [" + sortedArrayString + "]");
+
