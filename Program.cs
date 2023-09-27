@@ -27,6 +27,6 @@ string[] SortArray(string[] array)
 Console.Write($"Начальный массив: [" + string.Join(", ", array) + "]" + "\n" + "\n");
 
 string sortedArrayString = string.Join(", ", SortArray(array));
-sortedArrayString = sortedArrayString.TrimEnd(',', ' '); 
+sortedArrayString = sortedArrayString.TrimEnd(',', ' ');
 Console.Write($"Конечный массив: [" + sortedArrayString + "]");
 
